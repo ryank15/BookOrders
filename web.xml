@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DBAdminServlet</servlet-name>
+        <servlet-class>servlets.DBAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBAdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertRecordServlet</servlet-name>
+        <servlet-class>servlets.InsertRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertRecordServlet</servlet-name>
+        <url-pattern>/insertRecord</url-pattern>
+    </servlet-mapping>
+    <servlet>   
+        <servlet-name>CourseLookupServlet</servlet-name>
+        <servlet-class>servlets.CourseLookupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseLookupServlet</servlet-name>
+        <url-pattern>/courseLookup</url-pattern>
+    </servlet-mapping>
+    <servlet>   
+        <servlet-name>ProfessorLookupServlet</servlet-name>
+        <servlet-class>servlets.ProfessorLookupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfessorLookupServlet</servlet-name>
+        <url-pattern>/profLookup</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+</web-app>
