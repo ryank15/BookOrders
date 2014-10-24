@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Administrator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+                <h1>Database Administration</h1>
+        <div id="nav">
+		<div id="nav_wrapper">
+			<ul>
+                            <li><a href="home.html">Home</a></li>
+                        </ul>
+		</div>
+	</div>
+        <form name="adminform" method="post" action="admin">
+            Password: <input type="password" name="password" size="20" required placeholder="Password">
+            <br><input type="radio" name="action" value="show" checked="checked" required>Show All Records
+            <br><input type="radio" name="action" value="create">Create Table
+            <br><input type="radio" name="action" value="populate">Populate Table
+            <br><input type="radio" name="action" value="drop">Drop Table
+            <br><input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>
